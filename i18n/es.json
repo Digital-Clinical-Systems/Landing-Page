@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "ClinicalSync — Traspaso de turno y trazabilidad clínica cardiovascular",
+    "description": "Plataforma web que estandariza el traspaso de turno con SBAR, agiliza el registro de signos vitales y garantiza la trazabilidad de cada acción clínica en unidades cardiovasculares.",
+    "lang": "es"
+  },
+  "nav": {
+    "home": "Inicio",
+    "problem": "El problema",
+    "how": "Cómo funciona",
+    "features": "Características",
+    "benefits": "Beneficios",
+    "pricing": "Planes",
+    "faq": "Preguntas frecuentes",
+    "team": "Equipo",
+    "contact": "Contacto",
+    "cta": "Solicitar demostración",
+    "menu": "Abrir menú",
+    "language": "Cambiar idioma"
+  },
+  "hero": {
+    "eyebrow": "Continuidad clínica cardiovascular",
+    "title": "La información del turno no debería depender de la memoria de nadie",
+    "subtitle": "ClinicalSync estandariza el traspaso de turno con SBAR, permite registrar signos vitales y eventos en segundos, y deja constancia de quién hizo qué y cuándo.",
+    "ctaPrimary": "Solicitar demostración",
+    "ctaSecondary": "Ver cómo funciona",
+    "panel": {
+      "title": "Turno de hoy",
+      "patients": "Pacientes asignados",
+      "handover": "Traspaso SBAR",
+      "handoverState": "Pendiente de confirmación",
+      "vitals": "Últimos signos vitales",
+      "trace": "Registrado por E. Ramírez · 14:30"
+    }
+  },
+  "problem": {
+    "eyebrow": "El desafío",
+    "title": "Lo que se pierde entre un turno y el siguiente",
+    "intro": "En las unidades cardiovasculares la información del paciente se reparte entre el sistema hospitalario, los monitores, las anotaciones en papel y lo que se transmite verbalmente en el relevo. Esa dispersión genera doble registro, demoras en la consulta y omisiones en el momento más sensible del proceso.",
+    "card1": {
+      "title": "Registro duplicado",
+      "text": "El personal anota en papel durante la atención y transcribe al sistema al cierre del turno."
+    },
+    "card2": {
+      "title": "Pérdida en el relevo",
+      "text": "La transmisión verbal sin formato deja fuera información que el turno entrante necesita."
+    },
+    "card3": {
+      "title": "Sin trazabilidad",
+      "text": "No siempre es posible determinar quién registró un dato ni en qué momento."
+    },
+    "finding": "Según las entrevistas realizadas por nuestro equipo al personal de enfermería cardiovascular, la documentación consume cerca de una cuarta parte del turno.",
+    "context": "Las enfermedades cardiovasculares son la primera causa de muerte en el Perú según el Ministerio de Salud, y la ENDES 2024 reporta que el 14.2% de los peruanos mayores de 15 años padece hipertensión arterial."
+  },
+  "how": {
+    "eyebrow": "Cómo funciona",
+    "title": "Cuatro pasos dentro del turno",
+    "step1": { "num": "01", "title": "Recibe tu turno", "text": "Consulta el traspaso del equipo saliente en formato SBAR y confirma su recepción." },
+    "step2": { "num": "02", "title": "Registra durante la atención", "text": "Signos vitales, medicación administrada y eventos clínicos, en pocos pasos y desde el dispositivo que tengas a mano." },
+    "step3": { "num": "03", "title": "Ejecuta y confirma indicaciones", "text": "Las indicaciones médicas vigentes quedan visibles, y su cumplimiento se registra con responsable y hora." },
+    "step4": { "num": "04", "title": "Entrega sin omisiones", "text": "El traspaso se arma con lo que ya registraste durante el turno." }
+  },
+  "features": {
+    "eyebrow": "Características",
+    "title": "Lo que resuelve la plataforma",
+    "f1": { "title": "Traspaso SBAR estructurado", "text": "Formulario con las cuatro secciones obligatorias y confirmación de recepción por el turno entrante." },
+    "f2": { "title": "Registro de signos vitales", "text": "Captura rápida asociada al paciente, con fecha, hora y responsable automáticos." },
+    "f3": { "title": "Eventos clínicos", "text": "Documentación de lo relevante del turno, con marca de criticidad." },
+    "f4": { "title": "Indicaciones y cumplimiento", "text": "Ciclo completo entre lo que se indica y lo que efectivamente se ejecuta." },
+    "f5": { "title": "Resumen clínico", "text": "Vista consolidada de la evolución reciente del paciente." },
+    "f6": { "title": "Bitácora de auditoría", "text": "Historial consultable de acciones, responsables y horarios." }
+  },
+  "benefits": {
+    "eyebrow": "Beneficios",
+    "title": "Según tu rol en la unidad",
+    "nursing": { "title": "Personal de enfermería", "text": "Menos pasos para registrar, sin transcribir del papel al sistema, y un relevo que no depende de recordarlo todo." },
+    "physician": { "title": "Médicos especialistas", "text": "El estado del paciente en una sola vista, sin reunir datos de varias fuentes, y con certeza sobre el origen de cada dato." },
+    "institution": { "title": "Instituciones de salud", "text": "Trazabilidad completa de la atención y continuidad entre turnos, sin reemplazar el sistema hospitalario existente." }
+  },
+  "pricing": {
+    "eyebrow": "Planes",
+    "title": "Un modelo que escala con el servicio",
+    "monthly": "Mensual",
+    "annual": "Anual",
+    "annualNote": "-20%",
+    "recommended": "Recomendado",
+    "perMonth": "por mes",
+    "plan1": { "name": "Servicio", "desc": "Para una unidad o servicio cardiovascular.", "f1": "Hasta 15 profesionales", "f2": "Traspaso SBAR y registro clínico", "f3": "Bitácora de trazabilidad", "cta": "Elegir plan" },
+    "plan2": { "name": "Clínica", "desc": "Para clínicas y centros con varias unidades.", "f1": "Profesionales ilimitados", "f2": "Resumen clínico y alertas", "f3": "Reportes de auditoría", "cta": "Solicitar demostración" },
+    "plan3": { "name": "Red hospitalaria", "desc": "Para redes con múltiples sedes.", "f1": "Múltiples sedes", "f2": "Acompañamiento en la adopción", "f3": "Integración con sistemas existentes", "cta": "Contactar al equipo" },
+    "disclaimer": "Los precios son referenciales. ClinicalSync es un proyecto académico en desarrollo."
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Dudas habituales",
+    "q1": { "q": "¿ClinicalSync reemplaza el sistema de mi institución?", "a": "No. Es una herramienta complementaria enfocada en el trabajo diario del turno cardiovascular. Convive con el sistema hospitalario existente." },
+    "q2": { "q": "¿Qué medidas de seguridad contempla el diseño?", "a": "El diseño considera autenticación por roles, control de acceso según el turno asignado y un registro de auditoría que solo admite inserciones, de modo que ninguna acción registrada pueda alterarse después." },
+    "q3": { "q": "¿Qué se necesita para usarlo?", "a": "Un navegador web. Funciona en computadora, tablet y teléfono, para poder registrar junto a la cama del paciente." },
+    "q4": { "q": "¿En qué se diferencia de una historia clínica electrónica?", "a": "En el alcance. La historia clínica guarda el registro institucional del paciente; ClinicalSync resuelve la continuidad del turno: el traspaso, el registro inmediato y la trazabilidad." }
+  },
+  "team": {
+    "eyebrow": "Equipo",
+    "title": "Quiénes desarrollamos ClinicalSync",
+    "intro": "Estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas."
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Solicita una demostración",
+    "intro": "Cuéntanos sobre tu institución y coordinamos una sesión para mostrarte la plataforma.",
+    "name": "Nombre completo",
+    "institution": "Institución",
+    "email": "Correo electrónico",
+    "plan": "Plan de interés",
+    "planPlaceholder": "Selecciona una opción",
+    "message": "Mensaje",
+    "messagePlaceholder": "Cuéntanos qué necesitas resolver",
+    "submit": "Enviar solicitud",
+    "success": "Recibimos tu solicitud. Te contactaremos pronto.",
+    "errorRequired": "Este campo es obligatorio",
+    "errorEmail": "Ingresa un correo electrónico válido"
+  },
+  "footer": {
+    "tagline": "Continuidad clínica para unidades cardiovasculares.",
+    "sections": "Secciones",
+    "project": "Proyecto",
+    "repo": "Repositorio en GitHub",
+    "report": "Informe del proyecto",
+    "academic": "Trabajo académico del curso 1ASI0729 Desarrollo de Aplicaciones Open Source, Universidad Peruana de Ciencias Aplicadas.",
+    "rights": "Digital Clinical System · 2026"
+  }
+}
