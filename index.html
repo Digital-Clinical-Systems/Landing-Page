@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("cs-lang");
+          if (stored === "en" || stored === "es") {
+            document.documentElement.setAttribute("lang", stored);
+          }
+        } catch (e) {
+          /* localStorage no disponible */
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.title">
+      ClinicalSync — Traspaso de turno y trazabilidad clínica cardiovascular
+    </title>
+    <meta
+      name="description"
+      content="Plataforma web que estandariza el traspaso de turno con SBAR, agiliza el registro de signos vitales y garantiza la trazabilidad de cada acción clínica en unidades cardiovasculares."
+      data-i18n-attr="content:meta.description"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="a11y.skipToContent">
+      Saltar al contenido principal
+    </a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="#inicio" aria-label="ClinicalSync">
+          <span class="brand__mark" aria-hidden="true">CS</span>
+          <span class="brand__name">ClinicalSync</span>
+        </a>
+
+        <nav
+          class="site-nav"
+          id="site-nav"
+          data-i18n-attr="aria-label:nav.ariaLabel"
+          aria-label="Navegación principal"
+        >
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="#inicio" data-i18n="nav.home">Inicio</a></li>
+            <li>
+              <a class="site-nav__link" href="#problema" data-i18n="nav.problem">
+                El problema
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="#como-funciona" data-i18n="nav.how">
+                Cómo funciona
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="#caracteristicas" data-i18n="nav.features">
+                Características
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="#beneficios" data-i18n="nav.benefits">
+                Beneficios
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="#planes" data-i18n="nav.pricing">Planes</a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="#preguntas-frecuentes" data-i18n="nav.faq">
+                Preguntas frecuentes
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="#equipo" data-i18n="nav.team">Equipo</a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="#contacto" data-i18n="nav.contact">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+          <div
+            class="lang-switch"
+            role="group"
+            data-i18n-attr="aria-label:nav.language"
+            aria-label="Cambiar idioma"
+          >
+            <button type="button" class="lang-switch__btn" data-lang="es" aria-pressed="true">
+              ES
+            </button>
+            <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false">
+              EN
+            </button>
+          </div>
+
+          <a class="btn btn-primary btn-nav-cta" href="#contacto" data-i18n="nav.cta">
+            Solicitar demostración
+          </a>
+
+          <button
+            type="button"
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            data-i18n-attr="aria-label:nav.menu"
+            aria-label="Abrir menú"
+          >
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Las secciones (hero, problema, cómo funciona, etc.) se agregan en los siguientes pasos -->
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

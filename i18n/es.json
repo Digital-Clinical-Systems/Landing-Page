@@ -4,7 +4,11 @@
     "description": "Plataforma web que estandariza el traspaso de turno con SBAR, agiliza el registro de signos vitales y garantiza la trazabilidad de cada acción clínica en unidades cardiovasculares.",
     "lang": "es"
   },
+  "a11y": {
+    "skipToContent": "Saltar al contenido principal"
+  },
   "nav": {
+    "ariaLabel": "Navegación principal",
     "home": "Inicio",
     "problem": "El problema",
     "how": "Cómo funciona",

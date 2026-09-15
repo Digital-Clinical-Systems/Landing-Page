@@ -4,7 +4,11 @@
     "description": "Web platform that standardizes shift handover with SBAR, speeds up vital signs recording, and guarantees traceability of every clinical action in cardiovascular units.",
     "lang": "en"
   },
+  "a11y": {
+    "skipToContent": "Skip to main content"
+  },
   "nav": {
+    "ariaLabel": "Main navigation",
     "home": "Home",
     "problem": "The problem",
     "how": "How it works",

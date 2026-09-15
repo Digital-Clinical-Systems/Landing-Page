@@ -1,0 +1,130 @@
+/* Grid, contenedores y media queries */
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+/* Header */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  height: var(--header-height);
+}
+
+/* En pantallas muy angostas, el nombre de marca cede espacio al selector de
+   idioma y al botón de menú; el enlace conserva su aria-label como nombre
+   accesible. */
+@media (max-width: 399px) {
+  .brand__name {
+    display: none;
+  }
+}
+
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* Nav — colapsada en móvil y tablet (< 1024px) */
+
+.site-nav {
+  position: fixed;
+  inset: var(--header-height) 0 0 0;
+  overflow-y: auto;
+  padding: var(--space-6) var(--container-padding);
+  background-color: var(--color-bg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition: opacity var(--transition-base), transform var(--transition-base),
+    visibility var(--transition-base);
+}
+
+.site-nav.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.site-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.site-nav__link {
+  display: block;
+  padding: var(--space-3) 0;
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-medium);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Selector calificado para ganar especificidad sobre `.btn` de components.css
+   sin depender del orden de carga de las hojas de estilo. */
+.site-header__actions .btn-nav-cta {
+  display: none;
+}
+
+/* Escritorio — diseño completo (≥ 1024px) */
+
+@media (min-width: 1024px) {
+  .site-nav {
+    position: static;
+    inset: auto;
+    overflow: visible;
+    padding: 0;
+    background: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    pointer-events: auto;
+    transition: none;
+  }
+
+  .site-nav__list {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .site-nav__link {
+    padding: var(--space-2) 0;
+    font-size: var(--fs-sm);
+    border-bottom: none;
+    white-space: nowrap;
+  }
+
+  .site-header__actions .nav-toggle {
+    display: none;
+  }
+}
+
+/* El CTA del header solo entra a partir de aquí; entre 1024px y este punto
+   el CTA principal de la sección hero cumple ese rol sin apretar la barra. */
+@media (min-width: 1400px) {
+  .site-nav__list {
+    gap: var(--space-4);
+  }
+
+  .site-header__actions .btn-nav-cta {
+    display: inline-flex;
+  }
+}
