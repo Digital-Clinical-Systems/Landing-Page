@@ -263,6 +263,10 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
+  /* Un grid item que además es contenedor flex no se encoge por debajo del
+     ancho mínimo de su contenido a menos que se lo indiquemos; sin esto, un
+     botón con white-space:nowrap puede forzar overflow horizontal en móvil. */
+  min-width: 0;
 }
 
 .card__title {
@@ -305,4 +309,109 @@
   font-weight: var(--fw-extrabold);
   line-height: 1;
   color: var(--color-emerald-dark);
+}
+
+/* Toggle de facturación (mensual / anual) */
+
+.billing-toggle {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-1);
+  gap: var(--space-1);
+}
+
+.billing-toggle__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--color-text-secondary);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.billing-toggle__btn[aria-pressed="true"] {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+}
+
+.billing-toggle__badge {
+  padding: 0 var(--space-2);
+  border-radius: 999px;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  background-color: rgba(16, 185, 129, 0.16);
+  color: var(--color-emerald-dark);
+}
+
+.billing-toggle__btn[aria-pressed="true"] .billing-toggle__badge {
+  background-color: var(--color-white);
+}
+
+/* Tarjeta de plan */
+
+.plan--recommended {
+  border-color: var(--color-emerald-dark);
+  box-shadow: var(--shadow-md);
+}
+
+.plan__badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: var(--space-1) var(--space-3);
+  border-radius: 999px;
+  background-color: rgba(16, 185, 129, 0.12);
+  color: var(--color-emerald-dark);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+}
+
+.plan__desc {
+  color: var(--color-text-secondary);
+  font-size: var(--fs-sm);
+}
+
+.plan__price-value {
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-extrabold);
+  color: var(--color-navy);
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+
+/* Precio no numérico (plan a medida): es una etiqueta, no una cifra, así que
+   no necesita el mismo énfasis tipográfico gigante. */
+.plan__price-value--text {
+  font-size: var(--fs-xl);
+}
+
+.plan__price-suffix {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+}
+
+.plan__features li {
+  position: relative;
+  padding-left: 1.5em;
+  font-size: var(--fs-sm);
+  color: var(--color-text);
+}
+
+.plan__features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-emerald-dark);
+  font-weight: var(--fw-bold);
+}
+
+.pricing-disclaimer {
+  margin-top: var(--space-8);
+  text-align: center;
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
 }

@@ -398,7 +398,150 @@
         </div>
       </section>
 
-      <!-- Las siguientes secciones (planes, preguntas frecuentes, etc.) se agregan en los siguientes pasos -->
+      <section class="section section--surface" id="planes">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="pricing.eyebrow">Planes</p>
+            <h2 class="section-title" data-i18n="pricing.title">
+              Un modelo que escala con el servicio
+            </h2>
+          </div>
+
+          <div class="pricing-controls">
+            <div
+              class="billing-toggle"
+              role="group"
+              data-i18n-attr="aria-label:pricing.billingLabel"
+              aria-label="Ciclo de facturación"
+            >
+              <button
+                type="button"
+                class="billing-toggle__btn"
+                data-billing-option="monthly"
+                aria-pressed="true"
+              >
+                <span data-i18n="pricing.monthly">Mensual</span>
+              </button>
+              <button
+                type="button"
+                class="billing-toggle__btn"
+                data-billing-option="annual"
+                aria-pressed="false"
+              >
+                <span data-i18n="pricing.annual">Anual</span>
+                <span class="billing-toggle__badge" data-i18n="pricing.annualNote">-20%</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="card-grid">
+            <article class="card plan">
+              <div class="plan__header">
+                <h3 class="card__title plan__name" data-i18n="pricing.plan1.name">Servicio</h3>
+                <p class="card__text plan__desc" data-i18n="pricing.plan1.desc">
+                  Para una unidad o servicio cardiovascular.
+                </p>
+              </div>
+              <p class="plan__price">
+                <span
+                  class="plan__price-value"
+                  data-billing="monthly"
+                  data-i18n="pricing.plan1.priceMonthly"
+                >
+                  S/ 299
+                </span>
+                <span
+                  class="plan__price-value"
+                  data-billing="annual"
+                  data-i18n="pricing.plan1.priceAnnual"
+                  hidden
+                >
+                  S/ 239
+                </span>
+                <span class="plan__price-suffix" data-i18n="pricing.perMonth">por mes</span>
+              </p>
+              <ul class="plan__features">
+                <li data-i18n="pricing.plan1.f1">Hasta 15 profesionales</li>
+                <li data-i18n="pricing.plan1.f2">Traspaso SBAR y registro clínico</li>
+                <li data-i18n="pricing.plan1.f3">Bitácora de trazabilidad</li>
+              </ul>
+              <a class="btn btn-secondary plan__cta" href="#contacto" data-i18n="pricing.plan1.cta">
+                Elegir plan
+              </a>
+            </article>
+
+            <article class="card plan plan--recommended">
+              <span class="plan__badge" data-i18n="pricing.recommended">Recomendado</span>
+              <div class="plan__header">
+                <h3 class="card__title plan__name" data-i18n="pricing.plan2.name">Clínica</h3>
+                <p class="card__text plan__desc" data-i18n="pricing.plan2.desc">
+                  Para clínicas y centros con varias unidades.
+                </p>
+              </div>
+              <p class="plan__price">
+                <span
+                  class="plan__price-value"
+                  data-billing="monthly"
+                  data-i18n="pricing.plan2.priceMonthly"
+                >
+                  S/ 799
+                </span>
+                <span
+                  class="plan__price-value"
+                  data-billing="annual"
+                  data-i18n="pricing.plan2.priceAnnual"
+                  hidden
+                >
+                  S/ 639
+                </span>
+                <span class="plan__price-suffix" data-i18n="pricing.perMonth">por mes</span>
+              </p>
+              <ul class="plan__features">
+                <li data-i18n="pricing.plan2.f1">Profesionales ilimitados</li>
+                <li data-i18n="pricing.plan2.f2">Resumen clínico y alertas</li>
+                <li data-i18n="pricing.plan2.f3">Reportes de auditoría</li>
+              </ul>
+              <a class="btn btn-primary plan__cta" href="#contacto" data-i18n="pricing.plan2.cta">
+                Solicitar demostración
+              </a>
+            </article>
+
+            <article class="card plan">
+              <div class="plan__header">
+                <h3 class="card__title plan__name" data-i18n="pricing.plan3.name">
+                  Red hospitalaria
+                </h3>
+                <p class="card__text plan__desc" data-i18n="pricing.plan3.desc">
+                  Para redes con múltiples sedes.
+                </p>
+              </div>
+              <p class="plan__price">
+                <span
+                  class="plan__price-value plan__price-value--text"
+                  data-i18n="pricing.plan3.price"
+                >
+                  Personalizado
+                </span>
+              </p>
+              <ul class="plan__features">
+                <li data-i18n="pricing.plan3.f1">Múltiples sedes</li>
+                <li data-i18n="pricing.plan3.f2">Acompañamiento en la adopción</li>
+                <li data-i18n="pricing.plan3.f3">Integración con sistemas existentes</li>
+              </ul>
+              <a class="btn btn-secondary plan__cta" href="#contacto" data-i18n="pricing.plan3.cta">
+                Contactar al equipo
+              </a>
+            </article>
+          </div>
+
+          <p class="pricing-disclaimer" data-i18n="pricing.disclaimer">
+            Los precios son referenciales. ClinicalSync es un proyecto académico en
+            desarrollo.
+          </p>
+        </div>
+      </section>
+
+      <!-- Las siguientes secciones (preguntas frecuentes, equipo, etc.) se agregan en los siguientes pasos -->
     </main>
 
     <script type="module" src="js/main.js"></script>

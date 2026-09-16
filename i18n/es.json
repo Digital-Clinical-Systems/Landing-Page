@@ -95,11 +95,12 @@
     "monthly": "Mensual",
     "annual": "Anual",
     "annualNote": "-20%",
+    "billingLabel": "Ciclo de facturación",
     "recommended": "Recomendado",
     "perMonth": "por mes",
-    "plan1": { "name": "Servicio", "desc": "Para una unidad o servicio cardiovascular.", "f1": "Hasta 15 profesionales", "f2": "Traspaso SBAR y registro clínico", "f3": "Bitácora de trazabilidad", "cta": "Elegir plan" },
-    "plan2": { "name": "Clínica", "desc": "Para clínicas y centros con varias unidades.", "f1": "Profesionales ilimitados", "f2": "Resumen clínico y alertas", "f3": "Reportes de auditoría", "cta": "Solicitar demostración" },
-    "plan3": { "name": "Red hospitalaria", "desc": "Para redes con múltiples sedes.", "f1": "Múltiples sedes", "f2": "Acompañamiento en la adopción", "f3": "Integración con sistemas existentes", "cta": "Contactar al equipo" },
+    "plan1": { "name": "Servicio", "desc": "Para una unidad o servicio cardiovascular.", "priceMonthly": "S/ 299", "priceAnnual": "S/ 239", "f1": "Hasta 15 profesionales", "f2": "Traspaso SBAR y registro clínico", "f3": "Bitácora de trazabilidad", "cta": "Elegir plan" },
+    "plan2": { "name": "Clínica", "desc": "Para clínicas y centros con varias unidades.", "priceMonthly": "S/ 799", "priceAnnual": "S/ 639", "f1": "Profesionales ilimitados", "f2": "Resumen clínico y alertas", "f3": "Reportes de auditoría", "cta": "Solicitar demostración" },
+    "plan3": { "name": "Red hospitalaria", "desc": "Para redes con múltiples sedes.", "price": "Personalizado", "f1": "Múltiples sedes", "f2": "Acompañamiento en la adopción", "f3": "Integración con sistemas existentes", "cta": "Contactar al equipo" },
     "disclaimer": "Los precios son referenciales. ClinicalSync es un proyecto académico en desarrollo."
   },
   "faq": {

@@ -95,11 +95,12 @@
     "monthly": "Monthly",
     "annual": "Annual",
     "annualNote": "-20%",
+    "billingLabel": "Billing cycle",
     "recommended": "Recommended",
     "perMonth": "per month",
-    "plan1": { "name": "Unit", "desc": "For a single cardiovascular unit or ward.", "f1": "Up to 15 professionals", "f2": "SBAR handover and clinical recording", "f3": "Traceability log", "cta": "Choose plan" },
-    "plan2": { "name": "Clinic", "desc": "For clinics and centers with several units.", "f1": "Unlimited professionals", "f2": "Clinical summary and alerts", "f3": "Audit reports", "cta": "Request a demo" },
-    "plan3": { "name": "Hospital network", "desc": "For networks with multiple sites.", "f1": "Multiple sites", "f2": "Adoption support", "f3": "Integration with existing systems", "cta": "Contact the team" },
+    "plan1": { "name": "Unit", "desc": "For a single cardiovascular unit or ward.", "priceMonthly": "S/ 299", "priceAnnual": "S/ 239", "f1": "Up to 15 professionals", "f2": "SBAR handover and clinical recording", "f3": "Traceability log", "cta": "Choose plan" },
+    "plan2": { "name": "Clinic", "desc": "For clinics and centers with several units.", "priceMonthly": "S/ 799", "priceAnnual": "S/ 639", "f1": "Unlimited professionals", "f2": "Clinical summary and alerts", "f3": "Audit reports", "cta": "Request a demo" },
+    "plan3": { "name": "Hospital network", "desc": "For networks with multiple sites.", "price": "Custom", "f1": "Multiple sites", "f2": "Adoption support", "f3": "Integration with existing systems", "cta": "Contact the team" },
     "disclaimer": "Prices are indicative. ClinicalSync is an academic project under development."
   },
   "faq": {
