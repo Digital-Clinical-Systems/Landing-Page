@@ -114,7 +114,8 @@
   "team": {
     "eyebrow": "Team",
     "title": "Who builds ClinicalSync",
-    "intro": "Software Engineering students at Universidad Peruana de Ciencias Aplicadas."
+    "intro": "Software Engineering students at Universidad Peruana de Ciencias Aplicadas.",
+    "codeLabel": "Student code"
   },
   "contact": {
     "eyebrow": "Contact",

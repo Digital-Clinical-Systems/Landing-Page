@@ -114,7 +114,8 @@
   "team": {
     "eyebrow": "Equipo",
     "title": "Quiénes desarrollamos ClinicalSync",
-    "intro": "Estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas."
+    "intro": "Estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas.",
+    "codeLabel": "Código"
   },
   "contact": {
     "eyebrow": "Contacto",

@@ -462,3 +462,22 @@
   line-height: var(--lh-relaxed);
   color: var(--color-text-secondary);
 }
+
+/* Equipo */
+
+.team-member__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: var(--color-surface);
+}
+
+.team-member__name {
+  font-size: var(--fs-md);
+}
+
+.team-member__code {
+  font-size: var(--fs-xs);
+  color: var(--color-text-secondary);
+}

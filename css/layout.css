@@ -296,3 +296,16 @@
 .faq-item__answer {
   padding: 0 var(--space-5) var(--space-5);
 }
+
+/* Equipo */
+
+.team-member {
+  align-items: center;
+  text-align: center;
+}
+
+.team-member__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
