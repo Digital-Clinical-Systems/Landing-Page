@@ -309,3 +309,32 @@
   flex-direction: column;
   gap: var(--space-1);
 }
+
+/* Formulario de contacto */
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+  max-width: 720px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.form-submit {
+  justify-self: start;
+}
+
+@media (min-width: 768px) {
+  .contact-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-field--full {
+    grid-column: 1 / -1;
+  }
+}

@@ -693,7 +693,120 @@
         </div>
       </section>
 
-      <!-- La sección de contacto se agrega en el siguiente paso -->
+      <section class="section" id="contacto">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+            <h2 class="section-title" data-i18n="contact.title">Solicita una demostración</h2>
+            <p class="section-intro" data-i18n="contact.intro">
+              Cuéntanos sobre tu institución y coordinamos una sesión para mostrarte la
+              plataforma.
+            </p>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-field form-field--required">
+              <label for="field-name" data-i18n="contact.name">Nombre completo</label>
+              <input type="text" id="field-name" name="name" autocomplete="name" required
+                aria-describedby="error-name" />
+              <span class="form-error" id="error-name" data-i18n="contact.errorRequired" hidden>
+                Este campo es obligatorio
+              </span>
+            </div>
+
+            <div class="form-field form-field--required">
+              <label for="field-institution" data-i18n="contact.institution">Institución</label>
+              <input
+                type="text"
+                id="field-institution"
+                name="institution"
+                autocomplete="organization"
+                required
+                aria-describedby="error-institution"
+              />
+              <span
+                class="form-error"
+                id="error-institution"
+                data-i18n="contact.errorRequired"
+                hidden
+              >
+                Este campo es obligatorio
+              </span>
+            </div>
+
+            <div class="form-field form-field--required">
+              <label for="field-email" data-i18n="contact.email">Correo electrónico</label>
+              <input
+                type="email"
+                id="field-email"
+                name="email"
+                autocomplete="email"
+                required
+                aria-describedby="error-email-required error-email-invalid"
+              />
+              <span
+                class="form-error"
+                id="error-email-required"
+                data-i18n="contact.errorRequired"
+                hidden
+              >
+                Este campo es obligatorio
+              </span>
+              <span class="form-error" id="error-email-invalid" data-i18n="contact.errorEmail" hidden>
+                Ingresa un correo electrónico válido
+              </span>
+            </div>
+
+            <div class="form-field">
+              <label for="field-plan" data-i18n="contact.plan">Plan de interés</label>
+              <select id="field-plan" name="plan">
+                <option value="" data-i18n="contact.planPlaceholder">Selecciona una opción</option>
+                <option value="servicio" data-i18n="pricing.plan1.name">Servicio</option>
+                <option value="clinica" data-i18n="pricing.plan2.name">Clínica</option>
+                <option value="red-hospitalaria" data-i18n="pricing.plan3.name">
+                  Red hospitalaria
+                </option>
+              </select>
+            </div>
+
+            <div class="form-field form-field--required form-field--full">
+              <label for="field-message" data-i18n="contact.message">Mensaje</label>
+              <textarea
+                id="field-message"
+                name="message"
+                rows="4"
+                required
+                aria-describedby="error-message"
+                data-i18n-attr="placeholder:contact.messagePlaceholder"
+                placeholder="Cuéntanos qué necesitas resolver"
+              ></textarea>
+              <span
+                class="form-error"
+                id="error-message"
+                data-i18n="contact.errorRequired"
+                hidden
+              >
+                Este campo es obligatorio
+              </span>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit" data-i18n="contact.submit">
+              Enviar solicitud
+            </button>
+
+            <p
+              class="form-success"
+              id="form-success"
+              role="status"
+              tabindex="-1"
+              data-i18n="contact.success"
+              hidden
+            >
+              Recibimos tu solicitud. Te contactaremos pronto.
+            </p>
+          </form>
+        </div>
+      </section>
     </main>
 
     <script type="module" src="js/main.js"></script>

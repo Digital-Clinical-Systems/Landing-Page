@@ -1,5 +1,6 @@
 import { initI18n } from "./i18n.js";
 import { initNav } from "./nav.js";
+import { initContactForm } from "./form.js";
 
 function initPricingToggle() {
   const buttons = document.querySelectorAll(".billing-toggle__btn");
@@ -24,6 +25,7 @@ async function bootstrap() {
   await initI18n();
   initNav();
   initPricingToggle();
+  initContactForm();
 }
 
 document.addEventListener("DOMContentLoaded", bootstrap);
