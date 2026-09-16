@@ -714,7 +714,7 @@
               <label for="field-name" data-i18n="contact.name">Nombre completo</label>
               <input type="text" id="field-name" name="name" autocomplete="name" required
                 aria-describedby="error-name" />
-              <span class="form-error" id="error-name" data-i18n="contact.errorRequired" hidden>
+              <span class="form-error" id="error-name" role="alert" data-i18n="contact.errorRequired" hidden>
                 Este campo es obligatorio
               </span>
             </div>
@@ -732,6 +732,7 @@
               <span
                 class="form-error"
                 id="error-institution"
+                role="alert"
                 data-i18n="contact.errorRequired"
                 hidden
               >
@@ -752,12 +753,19 @@
               <span
                 class="form-error"
                 id="error-email-required"
+                role="alert"
                 data-i18n="contact.errorRequired"
                 hidden
               >
                 Este campo es obligatorio
               </span>
-              <span class="form-error" id="error-email-invalid" data-i18n="contact.errorEmail" hidden>
+              <span
+                class="form-error"
+                id="error-email-invalid"
+                role="alert"
+                data-i18n="contact.errorEmail"
+                hidden
+              >
                 Ingresa un correo electrónico válido
               </span>
             </div>
@@ -788,6 +796,7 @@
               <span
                 class="form-error"
                 id="error-message"
+                role="alert"
                 data-i18n="contact.errorRequired"
                 hidden
               >
