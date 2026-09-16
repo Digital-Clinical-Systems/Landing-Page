@@ -297,3 +297,12 @@
 .data-callout--context {
   border-left-color: var(--color-navy);
 }
+
+/* Tarjeta de paso numerado ("Cómo funciona") */
+
+.step-card__number {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-extrabold);
+  line-height: 1;
+  color: var(--color-emerald-dark);
+}

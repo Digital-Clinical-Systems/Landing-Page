@@ -221,3 +221,23 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Grilla de pasos numerados ("Cómo funciona"): una columna en móvil, dos en
+   tablet, las cuatro en una sola fila en escritorio. */
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+@media (min-width: 768px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .steps-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
