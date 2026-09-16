@@ -415,3 +415,50 @@
   font-size: var(--fs-xs);
   color: var(--color-text-secondary);
 }
+
+/* Preguntas frecuentes (acordeón con <details>/<summary> nativos) */
+
+.faq-item {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.faq-item__question {
+  list-style: none;
+  cursor: pointer;
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  color: var(--color-navy);
+  transition: background-color var(--transition-fast);
+}
+
+.faq-item__question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item__question:hover {
+  background-color: var(--color-surface);
+}
+
+.faq-item__question::after {
+  content: "";
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--color-navy);
+  border-bottom: 2px solid var(--color-navy);
+  transform: rotate(45deg);
+  transition: transform var(--transition-fast);
+}
+
+.faq-item[open] .faq-item__question::after {
+  transform: rotate(-135deg);
+}
+
+.faq-item__answer {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-relaxed);
+  color: var(--color-text-secondary);
+}
