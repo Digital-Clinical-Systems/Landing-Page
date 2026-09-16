@@ -228,3 +228,72 @@
   font-size: var(--fs-xs);
   color: var(--color-text-secondary);
 }
+
+/* Secciones genéricas */
+
+.section--surface {
+  background-color: var(--color-surface);
+}
+
+.section-title {
+  font-size: var(--fs-2xl);
+  color: var(--color-navy);
+}
+
+.section-intro {
+  font-size: var(--fs-md);
+  line-height: var(--lh-relaxed);
+  color: var(--color-text-secondary);
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: var(--fs-3xl);
+  }
+}
+
+/* Tarjeta genérica */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.card__title {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  color: var(--color-navy);
+}
+
+.card__text {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-relaxed);
+  color: var(--color-text-secondary);
+}
+
+/* Bloques de datos (hallazgo propio + contexto epidemiológico) */
+
+.data-callout {
+  padding: var(--space-5) var(--space-6);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-slate);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-relaxed);
+  color: var(--color-text);
+}
+
+.data-callout--finding {
+  border-left-color: var(--color-emerald-dark);
+}
+
+.data-callout--context {
+  border-left-color: var(--color-navy);
+}
