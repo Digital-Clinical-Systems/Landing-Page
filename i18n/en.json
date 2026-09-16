@@ -31,9 +31,17 @@
     "panel": {
       "title": "Today's shift",
       "patients": "Assigned patients",
+      "patientsList": {
+        "p1": "Bed 04 · Stable",
+        "p2": "Bed 07 · Under monitoring",
+        "p3": "Bed 12 · Stable"
+      },
       "handover": "SBAR handover",
       "handoverState": "Awaiting confirmation",
       "vitals": "Latest vital signs",
+      "vital1": "HR 78 bpm",
+      "vital2": "BP 120/80 mmHg",
+      "vital3": "SpO2 97%",
       "trace": "Recorded by E. Ramírez · 2:30 PM"
     }
   },

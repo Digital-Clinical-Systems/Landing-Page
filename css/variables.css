@@ -7,8 +7,13 @@
   --color-slate: #64748b;
   --color-white: #ffffff;
 
-  /* Variantes de apoyo (derivadas de la paleta, no colores nuevos) */
-  --color-emerald-dark: #0ea371;
+  /* Variantes de apoyo (derivadas de la paleta, no colores nuevos).
+     --color-emerald puro (#10B981) da 2.54:1 de contraste sobre blanco,
+     insuficiente para texto/foco (WCAG AA exige 4.5:1). Estas dos variantes,
+     mismo tono, se usan donde hay texto o un indicador que debe distinguirse
+     del fondo: botones sólidos y el anillo de foco. */
+  --color-emerald-dark: #047857;
+  --color-emerald-darker: #065f46;
   --color-border: #e2e8f0;
   --color-surface: #f8fafc;
 
@@ -16,7 +21,7 @@
   --color-bg: var(--color-white);
   --color-text: var(--color-navy);
   --color-text-secondary: var(--color-slate);
-  --color-focus-ring: var(--color-emerald);
+  --color-focus-ring: var(--color-emerald-dark);
 
   /* Tipografía */
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;

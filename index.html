@@ -130,7 +130,71 @@
     </header>
 
     <main id="main">
-      <!-- Las secciones (hero, problema, cómo funciona, etc.) se agregan en los siguientes pasos -->
+      <section class="hero" id="inicio">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Continuidad clínica cardiovascular</p>
+            <h1 class="hero__title" data-i18n="hero.title">
+              La información del turno no debería depender de la memoria de nadie
+            </h1>
+            <p class="hero__subtitle" data-i18n="hero.subtitle">
+              ClinicalSync estandariza el traspaso de turno con SBAR, permite registrar
+              signos vitales y eventos en segundos, y deja constancia de quién hizo qué y
+              cuándo.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn-primary" href="#contacto" data-i18n="hero.ctaPrimary">
+                Solicitar demostración
+              </a>
+              <a class="btn btn-secondary" href="#como-funciona" data-i18n="hero.ctaSecondary">
+                Ver cómo funciona
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__panel">
+            <div class="mock-panel">
+              <span class="mock-panel__title" data-i18n="hero.panel.title">Turno de hoy</span>
+
+              <div class="mock-panel__section">
+                <p class="mock-panel__label" data-i18n="hero.panel.patients">
+                  Pacientes asignados
+                </p>
+                <ul class="mock-panel__patients">
+                  <li data-i18n="hero.panel.patientsList.p1">Cama 04 · Estable</li>
+                  <li data-i18n="hero.panel.patientsList.p2">Cama 07 · En monitoreo</li>
+                  <li data-i18n="hero.panel.patientsList.p3">Cama 12 · Estable</li>
+                </ul>
+              </div>
+
+              <div class="mock-panel__section">
+                <p class="mock-panel__label" data-i18n="hero.panel.vitals">
+                  Últimos signos vitales
+                </p>
+                <ul class="mock-panel__vitals">
+                  <li data-i18n="hero.panel.vital1">FC 78 lpm</li>
+                  <li data-i18n="hero.panel.vital2">PA 120/80 mmHg</li>
+                  <li data-i18n="hero.panel.vital3">SpO2 97%</li>
+                </ul>
+              </div>
+
+              <div class="mock-panel__section mock-panel__handover">
+                <p class="mock-panel__label" data-i18n="hero.panel.handover">Traspaso SBAR</p>
+                <span class="mock-panel__status">
+                  <span class="mock-panel__status-dot" aria-hidden="true"></span>
+                  <span data-i18n="hero.panel.handoverState">Pendiente de confirmación</span>
+                </span>
+              </div>
+
+              <p class="mock-panel__trace" data-i18n="hero.panel.trace">
+                Registrado por E. Ramírez · 14:30
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Las siguientes secciones (problema, cómo funciona, etc.) se agregan en los siguientes pasos -->
     </main>
 
     <script type="module" src="js/main.js"></script>

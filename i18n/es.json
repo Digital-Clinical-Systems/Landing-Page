@@ -31,9 +31,17 @@
     "panel": {
       "title": "Turno de hoy",
       "patients": "Pacientes asignados",
+      "patientsList": {
+        "p1": "Cama 04 · Estable",
+        "p2": "Cama 07 · En monitoreo",
+        "p3": "Cama 12 · Estable"
+      },
       "handover": "Traspaso SBAR",
       "handoverState": "Pendiente de confirmación",
       "vitals": "Últimos signos vitales",
+      "vital1": "FC 78 lpm",
+      "vital2": "PA 120/80 mmHg",
+      "vital3": "SpO2 97%",
       "trace": "Registrado por E. Ramírez · 14:30"
     }
   },
