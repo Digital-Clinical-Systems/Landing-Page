@@ -540,3 +540,53 @@
   color: var(--color-navy);
   font-weight: var(--fw-medium);
 }
+
+/* Pie de página */
+
+.site-footer {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+}
+
+.site-footer .brand {
+  color: var(--color-white);
+}
+
+.site-footer .brand__mark {
+  background-color: var(--color-white);
+  color: var(--color-navy);
+}
+
+.footer-tagline {
+  font-size: var(--fs-sm);
+  color: var(--color-slate-on-navy);
+  max-width: 32ch;
+}
+
+.footer-heading {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--color-white);
+}
+
+.footer-links a {
+  font-size: var(--fs-sm);
+  color: var(--color-slate-on-navy);
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--color-white);
+}
+
+.site-footer__bottom {
+  font-size: var(--fs-xs);
+  color: var(--color-slate-on-navy);
+}
+
+/* El anillo de foco por defecto (emerald-dark) da 2.68:1 sobre navy,
+   insuficiente para un indicador no textual (WCAG 1.4.11 exige 3:1). El
+   emerald puro sí cumple sobre este fondo oscuro. */
+.site-footer :focus-visible {
+  outline-color: var(--color-emerald);
+}

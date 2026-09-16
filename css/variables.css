@@ -17,6 +17,11 @@
   --color-border: #e2e8f0;
   --color-surface: #f8fafc;
 
+  /* --color-slate sobre --color-navy da 3.09:1, insuficiente para texto
+     (WCAG AA exige 4.5:1). Variante clara del mismo tono para texto
+     secundario sobre fondos oscuros (pie de página). */
+  --color-slate-on-navy: #a9b4c7;
+
   /* Roles semánticos */
   --color-bg: var(--color-white);
   --color-text: var(--color-navy);

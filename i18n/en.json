@@ -135,6 +135,7 @@
   },
   "footer": {
     "tagline": "Care continuity for cardiovascular units.",
+    "navAriaLabel": "Section links",
     "sections": "Sections",
     "project": "Project",
     "repo": "GitHub repository",

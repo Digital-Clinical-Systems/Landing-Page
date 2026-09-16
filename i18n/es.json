@@ -135,6 +135,7 @@
   },
   "footer": {
     "tagline": "Continuidad clínica para unidades cardiovasculares.",
+    "navAriaLabel": "Enlaces de secciones",
     "sections": "Secciones",
     "project": "Proyecto",
     "repo": "Repositorio en GitHub",
