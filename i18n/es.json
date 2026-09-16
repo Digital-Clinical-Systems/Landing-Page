@@ -1,8 +1,7 @@
 {
   "meta": {
     "title": "ClinicalSync — Traspaso de turno y trazabilidad clínica cardiovascular",
-    "description": "Plataforma web que estandariza el traspaso de turno con SBAR, agiliza el registro de signos vitales y garantiza la trazabilidad de cada acción clínica en unidades cardiovasculares.",
-    "lang": "es"
+    "description": "Plataforma web que estandariza el traspaso de turno con SBAR, agiliza el registro de signos vitales y garantiza la trazabilidad de cada acción clínica en unidades cardiovasculares."
   },
   "a11y": {
     "skipToContent": "Saltar al contenido principal"
@@ -115,7 +114,14 @@
     "eyebrow": "Equipo",
     "title": "Quiénes desarrollamos ClinicalSync",
     "intro": "Estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas.",
-    "codeLabel": "Código"
+    "codeLabel": "Código",
+    "photoAlt": {
+      "johan": "Foto de Johan Giovani Huamán Cuba",
+      "oskar": "Foto de Oskar Rodrigo Sosa Soto",
+      "mathias": "Foto de Mathias Joaquin Acuache Lucas",
+      "angel": "Foto de Angel Andres Valdez Melo",
+      "johnny": "Foto de Johnny Alexander Ojanama Abanto"
+    }
   },
   "contact": {
     "eyebrow": "Contacto",

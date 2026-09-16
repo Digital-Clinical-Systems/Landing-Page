@@ -1,8 +1,7 @@
 {
   "meta": {
     "title": "ClinicalSync — Shift handover and clinical traceability for cardiovascular care",
-    "description": "Web platform that standardizes shift handover with SBAR, speeds up vital signs recording, and guarantees traceability of every clinical action in cardiovascular units.",
-    "lang": "en"
+    "description": "Web platform that standardizes shift handover with SBAR, speeds up vital signs recording, and guarantees traceability of every clinical action in cardiovascular units."
   },
   "a11y": {
     "skipToContent": "Skip to main content"
@@ -115,7 +114,14 @@
     "eyebrow": "Team",
     "title": "Who builds ClinicalSync",
     "intro": "Software Engineering students at Universidad Peruana de Ciencias Aplicadas.",
-    "codeLabel": "Student code"
+    "codeLabel": "Student code",
+    "photoAlt": {
+      "johan": "Photo of Johan Giovani Huamán Cuba",
+      "oskar": "Photo of Oskar Rodrigo Sosa Soto",
+      "mathias": "Photo of Mathias Joaquin Acuache Lucas",
+      "angel": "Photo of Angel Andres Valdez Melo",
+      "johnny": "Photo of Johnny Alexander Ojanama Abanto"
+    }
   },
   "contact": {
     "eyebrow": "Contact",
