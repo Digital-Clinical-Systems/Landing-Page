@@ -1,7 +1,12 @@
 {
   "meta": {
     "title": "ClinicalSync — Shift handover and clinical traceability for cardiovascular care",
-    "description": "Web platform that standardizes shift handover with SBAR, speeds up vital signs recording, and guarantees traceability of every clinical action in cardiovascular units."
+    "description": "Web platform that standardizes shift handover with SBAR, speeds up vital signs recording, and guarantees traceability of every clinical action in cardiovascular units.",
+    "keywords": "shift handover, SBAR, clinical recording, vital signs, clinical traceability, cardiovascular unit, cardiovascular ICU, clinical software",
+    "og": {
+      "title": "ClinicalSync — Clinical continuity for cardiovascular units",
+      "description": "Standardizes SBAR handover, records vital signs in seconds, and keeps a record of who did what and when."
+    }
   },
   "a11y": {
     "skipToContent": "Skip to main content"
