@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "ClinicalSync — Shift handover and clinical traceability for cardiovascular care",
-    "description": "Web platform that standardizes shift handover with SBAR, speeds up vital signs recording, and guarantees traceability of every clinical action in cardiovascular units.",
+    "title": "ClinicalSync — Shift handover and clinical traceability",
+    "description": "Standardize shift handover with SBAR, record vital signs in seconds and keep a verifiable trace of every clinical action in cardiovascular units.",
     "keywords": "shift handover, SBAR, clinical recording, vital signs, clinical traceability, cardiovascular unit, cardiovascular ICU, clinical software",
     "og": {
       "title": "ClinicalSync — Clinical continuity for cardiovascular units",
@@ -71,27 +71,70 @@
   "how": {
     "eyebrow": "How it works",
     "title": "Four steps within the shift",
-    "step1": { "num": "01", "title": "Receive your shift", "text": "Review the outgoing team's handover in SBAR format and confirm you received it." },
-    "step2": { "num": "02", "title": "Record during care", "text": "Vital signs, administered medication and clinical events, in a few steps and from whichever device you have at hand." },
-    "step3": { "num": "03", "title": "Carry out and confirm orders", "text": "Active medical orders stay visible, and their completion is recorded with the responsible staff member and time." },
-    "step4": { "num": "04", "title": "Hand over without omissions", "text": "The handover is assembled from what you already recorded during the shift." }
+    "step1": {
+      "num": "01",
+      "title": "Receive your shift",
+      "text": "Review the outgoing team's handover in SBAR format and confirm you received it."
+    },
+    "step2": {
+      "num": "02",
+      "title": "Record during care",
+      "text": "Vital signs, administered medication and clinical events, in a few steps and from whichever device you have at hand."
+    },
+    "step3": {
+      "num": "03",
+      "title": "Carry out and confirm orders",
+      "text": "Active medical orders stay visible, and their completion is recorded with the responsible staff member and time."
+    },
+    "step4": {
+      "num": "04",
+      "title": "Hand over without omissions",
+      "text": "The handover is assembled from what you already recorded during the shift."
+    }
   },
   "features": {
     "eyebrow": "Features",
     "title": "What the platform solves",
-    "f1": { "title": "Structured SBAR handover", "text": "A form with the four required sections and confirmation of receipt by the incoming shift." },
-    "f2": { "title": "Vital signs recording", "text": "Quick capture linked to the patient, with automatic date, time and responsible staff member." },
-    "f3": { "title": "Clinical events", "text": "Documentation of what matters during the shift, flagged by criticality." },
-    "f4": { "title": "Orders and completion", "text": "The full cycle between what is ordered and what is actually carried out." },
-    "f5": { "title": "Clinical summary", "text": "A consolidated view of the patient's recent progress." },
-    "f6": { "title": "Audit trail", "text": "A searchable history of actions, responsible staff and timestamps." }
+    "f1": {
+      "title": "Structured SBAR handover",
+      "text": "A form with the four required sections and confirmation of receipt by the incoming shift."
+    },
+    "f2": {
+      "title": "Vital signs recording",
+      "text": "Quick capture linked to the patient, with automatic date, time and responsible staff member."
+    },
+    "f3": {
+      "title": "Clinical events",
+      "text": "Documentation of what matters during the shift, flagged by criticality."
+    },
+    "f4": {
+      "title": "Orders and completion",
+      "text": "The full cycle between what is ordered and what is actually carried out."
+    },
+    "f5": {
+      "title": "Clinical summary",
+      "text": "A consolidated view of the patient's recent progress."
+    },
+    "f6": {
+      "title": "Audit trail",
+      "text": "A searchable history of actions, responsible staff and timestamps."
+    }
   },
   "benefits": {
     "eyebrow": "Benefits",
     "title": "Depending on your role in the unit",
-    "nursing": { "title": "Nursing staff", "text": "Fewer steps to record, no transcribing from paper into the system, and a handover that does not rely on remembering everything." },
-    "physician": { "title": "Specialist physicians", "text": "The patient's status in a single view, without gathering data from several sources, and with certainty about where each entry came from." },
-    "institution": { "title": "Healthcare institutions", "text": "Full traceability of care and continuity between shifts, without replacing the existing hospital system." }
+    "nursing": {
+      "title": "Nursing staff",
+      "text": "Fewer steps to record, no transcribing from paper into the system, and a handover that does not rely on remembering everything."
+    },
+    "physician": {
+      "title": "Specialist physicians",
+      "text": "The patient's status in a single view, without gathering data from several sources, and with certainty about where each entry came from."
+    },
+    "institution": {
+      "title": "Healthcare institutions",
+      "text": "Full traceability of care and continuity between shifts, without replacing the existing hospital system."
+    }
   },
   "pricing": {
     "eyebrow": "Pricing",
@@ -102,18 +145,56 @@
     "billingLabel": "Billing cycle",
     "recommended": "Recommended",
     "perMonth": "per month",
-    "plan1": { "name": "Unit", "desc": "For a single cardiovascular unit or ward.", "priceMonthly": "S/ 299", "priceAnnual": "S/ 239", "f1": "Up to 15 professionals", "f2": "SBAR handover and clinical recording", "f3": "Traceability log", "cta": "Choose plan" },
-    "plan2": { "name": "Clinic", "desc": "For clinics and centers with several units.", "priceMonthly": "S/ 799", "priceAnnual": "S/ 639", "f1": "Unlimited professionals", "f2": "Clinical summary and alerts", "f3": "Audit reports", "cta": "Request a demo" },
-    "plan3": { "name": "Hospital network", "desc": "For networks with multiple sites.", "price": "Custom", "f1": "Multiple sites", "f2": "Adoption support", "f3": "Integration with existing systems", "cta": "Contact the team" },
+    "plan1": {
+      "name": "Unit",
+      "desc": "For a single cardiovascular unit or ward.",
+      "priceMonthly": "S/ 299",
+      "priceAnnual": "S/ 239",
+      "f1": "Up to 15 professionals",
+      "f2": "SBAR handover and clinical recording",
+      "f3": "Traceability log",
+      "cta": "Choose plan"
+    },
+    "plan2": {
+      "name": "Clinic",
+      "desc": "For clinics and centers with several units.",
+      "priceMonthly": "S/ 799",
+      "priceAnnual": "S/ 639",
+      "f1": "Unlimited professionals",
+      "f2": "Clinical summary and alerts",
+      "f3": "Audit reports",
+      "cta": "Request a demo"
+    },
+    "plan3": {
+      "name": "Hospital network",
+      "desc": "For networks with multiple sites.",
+      "price": "Custom",
+      "f1": "Multiple sites",
+      "f2": "Adoption support",
+      "f3": "Integration with existing systems",
+      "cta": "Contact the team"
+    },
     "disclaimer": "Prices are indicative. ClinicalSync is an academic project under development."
   },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Common questions",
-    "q1": { "q": "Does ClinicalSync replace my institution's system?", "a": "No. It is a complementary tool focused on the day-to-day work of the cardiovascular shift. It runs alongside the existing hospital system." },
-    "q2": { "q": "What security measures does the design consider?", "a": "The design includes role-based authentication, access control by assigned shift, and an audit log that only accepts insertions, so no recorded action can be altered afterwards." },
-    "q3": { "q": "What do I need to use it?", "a": "A web browser. It works on desktop, tablet and phone, so staff can record at the patient's bedside." },
-    "q4": { "q": "How is it different from an electronic health record?", "a": "In scope. The health record holds the institutional record of the patient; ClinicalSync solves shift continuity: the handover, immediate recording and traceability." }
+    "q1": {
+      "q": "Does ClinicalSync replace my institution's system?",
+      "a": "No. It is a complementary tool focused on the day-to-day work of the cardiovascular shift. It runs alongside the existing hospital system."
+    },
+    "q2": {
+      "q": "What security measures does the design consider?",
+      "a": "The design includes role-based authentication, access control by assigned shift, and an audit log that only accepts insertions, so no recorded action can be altered afterwards."
+    },
+    "q3": {
+      "q": "What do I need to use it?",
+      "a": "A web browser. It works on desktop, tablet and phone, so staff can record at the patient's bedside."
+    },
+    "q4": {
+      "q": "How is it different from an electronic health record?",
+      "a": "In scope. The health record holds the institutional record of the patient; ClinicalSync solves shift continuity: the handover, immediate recording and traceability."
+    }
   },
   "team": {
     "eyebrow": "Team",

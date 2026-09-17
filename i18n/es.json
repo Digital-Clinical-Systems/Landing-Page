@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "ClinicalSync — Traspaso de turno y trazabilidad clínica cardiovascular",
-    "description": "Plataforma web que estandariza el traspaso de turno con SBAR, agiliza el registro de signos vitales y garantiza la trazabilidad de cada acción clínica en unidades cardiovasculares.",
+    "title": "ClinicalSync — Traspaso de turno y trazabilidad",
+    "description": "Estandariza el traspaso de turno con SBAR, registra signos vitales en segundos y deja constancia de cada acción clínica en unidades cardiovasculares.",
     "keywords": "traspaso de turno, SBAR, registro clínico, signos vitales, trazabilidad clínica, unidad cardiovascular, UCI cardiovascular, software clínico",
     "og": {
       "title": "ClinicalSync — Continuidad clínica en unidades cardiovasculares",
@@ -71,27 +71,70 @@
   "how": {
     "eyebrow": "Cómo funciona",
     "title": "Cuatro pasos dentro del turno",
-    "step1": { "num": "01", "title": "Recibe tu turno", "text": "Consulta el traspaso del equipo saliente en formato SBAR y confirma su recepción." },
-    "step2": { "num": "02", "title": "Registra durante la atención", "text": "Signos vitales, medicación administrada y eventos clínicos, en pocos pasos y desde el dispositivo que tengas a mano." },
-    "step3": { "num": "03", "title": "Ejecuta y confirma indicaciones", "text": "Las indicaciones médicas vigentes quedan visibles, y su cumplimiento se registra con responsable y hora." },
-    "step4": { "num": "04", "title": "Entrega sin omisiones", "text": "El traspaso se arma con lo que ya registraste durante el turno." }
+    "step1": {
+      "num": "01",
+      "title": "Recibe tu turno",
+      "text": "Consulta el traspaso del equipo saliente en formato SBAR y confirma su recepción."
+    },
+    "step2": {
+      "num": "02",
+      "title": "Registra durante la atención",
+      "text": "Signos vitales, medicación administrada y eventos clínicos, en pocos pasos y desde el dispositivo que tengas a mano."
+    },
+    "step3": {
+      "num": "03",
+      "title": "Ejecuta y confirma indicaciones",
+      "text": "Las indicaciones médicas vigentes quedan visibles, y su cumplimiento se registra con responsable y hora."
+    },
+    "step4": {
+      "num": "04",
+      "title": "Entrega sin omisiones",
+      "text": "El traspaso se arma con lo que ya registraste durante el turno."
+    }
   },
   "features": {
     "eyebrow": "Características",
     "title": "Lo que resuelve la plataforma",
-    "f1": { "title": "Traspaso SBAR estructurado", "text": "Formulario con las cuatro secciones obligatorias y confirmación de recepción por el turno entrante." },
-    "f2": { "title": "Registro de signos vitales", "text": "Captura rápida asociada al paciente, con fecha, hora y responsable automáticos." },
-    "f3": { "title": "Eventos clínicos", "text": "Documentación de lo relevante del turno, con marca de criticidad." },
-    "f4": { "title": "Indicaciones y cumplimiento", "text": "Ciclo completo entre lo que se indica y lo que efectivamente se ejecuta." },
-    "f5": { "title": "Resumen clínico", "text": "Vista consolidada de la evolución reciente del paciente." },
-    "f6": { "title": "Bitácora de auditoría", "text": "Historial consultable de acciones, responsables y horarios." }
+    "f1": {
+      "title": "Traspaso SBAR estructurado",
+      "text": "Formulario con las cuatro secciones obligatorias y confirmación de recepción por el turno entrante."
+    },
+    "f2": {
+      "title": "Registro de signos vitales",
+      "text": "Captura rápida asociada al paciente, con fecha, hora y responsable automáticos."
+    },
+    "f3": {
+      "title": "Eventos clínicos",
+      "text": "Documentación de lo relevante del turno, con marca de criticidad."
+    },
+    "f4": {
+      "title": "Indicaciones y cumplimiento",
+      "text": "Ciclo completo entre lo que se indica y lo que efectivamente se ejecuta."
+    },
+    "f5": {
+      "title": "Resumen clínico",
+      "text": "Vista consolidada de la evolución reciente del paciente."
+    },
+    "f6": {
+      "title": "Bitácora de auditoría",
+      "text": "Historial consultable de acciones, responsables y horarios."
+    }
   },
   "benefits": {
     "eyebrow": "Beneficios",
     "title": "Según tu rol en la unidad",
-    "nursing": { "title": "Personal de enfermería", "text": "Menos pasos para registrar, sin transcribir del papel al sistema, y un relevo que no depende de recordarlo todo." },
-    "physician": { "title": "Médicos especialistas", "text": "El estado del paciente en una sola vista, sin reunir datos de varias fuentes, y con certeza sobre el origen de cada dato." },
-    "institution": { "title": "Instituciones de salud", "text": "Trazabilidad completa de la atención y continuidad entre turnos, sin reemplazar el sistema hospitalario existente." }
+    "nursing": {
+      "title": "Personal de enfermería",
+      "text": "Menos pasos para registrar, sin transcribir del papel al sistema, y un relevo que no depende de recordarlo todo."
+    },
+    "physician": {
+      "title": "Médicos especialistas",
+      "text": "El estado del paciente en una sola vista, sin reunir datos de varias fuentes, y con certeza sobre el origen de cada dato."
+    },
+    "institution": {
+      "title": "Instituciones de salud",
+      "text": "Trazabilidad completa de la atención y continuidad entre turnos, sin reemplazar el sistema hospitalario existente."
+    }
   },
   "pricing": {
     "eyebrow": "Planes",
@@ -102,18 +145,56 @@
     "billingLabel": "Ciclo de facturación",
     "recommended": "Recomendado",
     "perMonth": "por mes",
-    "plan1": { "name": "Servicio", "desc": "Para una unidad o servicio cardiovascular.", "priceMonthly": "S/ 299", "priceAnnual": "S/ 239", "f1": "Hasta 15 profesionales", "f2": "Traspaso SBAR y registro clínico", "f3": "Bitácora de trazabilidad", "cta": "Elegir plan" },
-    "plan2": { "name": "Clínica", "desc": "Para clínicas y centros con varias unidades.", "priceMonthly": "S/ 799", "priceAnnual": "S/ 639", "f1": "Profesionales ilimitados", "f2": "Resumen clínico y alertas", "f3": "Reportes de auditoría", "cta": "Solicitar demostración" },
-    "plan3": { "name": "Red hospitalaria", "desc": "Para redes con múltiples sedes.", "price": "Personalizado", "f1": "Múltiples sedes", "f2": "Acompañamiento en la adopción", "f3": "Integración con sistemas existentes", "cta": "Contactar al equipo" },
+    "plan1": {
+      "name": "Servicio",
+      "desc": "Para una unidad o servicio cardiovascular.",
+      "priceMonthly": "S/ 299",
+      "priceAnnual": "S/ 239",
+      "f1": "Hasta 15 profesionales",
+      "f2": "Traspaso SBAR y registro clínico",
+      "f3": "Bitácora de trazabilidad",
+      "cta": "Elegir plan"
+    },
+    "plan2": {
+      "name": "Clínica",
+      "desc": "Para clínicas y centros con varias unidades.",
+      "priceMonthly": "S/ 799",
+      "priceAnnual": "S/ 639",
+      "f1": "Profesionales ilimitados",
+      "f2": "Resumen clínico y alertas",
+      "f3": "Reportes de auditoría",
+      "cta": "Solicitar demostración"
+    },
+    "plan3": {
+      "name": "Red hospitalaria",
+      "desc": "Para redes con múltiples sedes.",
+      "price": "Personalizado",
+      "f1": "Múltiples sedes",
+      "f2": "Acompañamiento en la adopción",
+      "f3": "Integración con sistemas existentes",
+      "cta": "Contactar al equipo"
+    },
     "disclaimer": "Los precios son referenciales. ClinicalSync es un proyecto académico en desarrollo."
   },
   "faq": {
     "eyebrow": "Preguntas frecuentes",
     "title": "Dudas habituales",
-    "q1": { "q": "¿ClinicalSync reemplaza el sistema de mi institución?", "a": "No. Es una herramienta complementaria enfocada en el trabajo diario del turno cardiovascular. Convive con el sistema hospitalario existente." },
-    "q2": { "q": "¿Qué medidas de seguridad contempla el diseño?", "a": "El diseño considera autenticación por roles, control de acceso según el turno asignado y un registro de auditoría que solo admite inserciones, de modo que ninguna acción registrada pueda alterarse después." },
-    "q3": { "q": "¿Qué se necesita para usarlo?", "a": "Un navegador web. Funciona en computadora, tablet y teléfono, para poder registrar junto a la cama del paciente." },
-    "q4": { "q": "¿En qué se diferencia de una historia clínica electrónica?", "a": "En el alcance. La historia clínica guarda el registro institucional del paciente; ClinicalSync resuelve la continuidad del turno: el traspaso, el registro inmediato y la trazabilidad." }
+    "q1": {
+      "q": "¿ClinicalSync reemplaza el sistema de mi institución?",
+      "a": "No. Es una herramienta complementaria enfocada en el trabajo diario del turno cardiovascular. Convive con el sistema hospitalario existente."
+    },
+    "q2": {
+      "q": "¿Qué medidas de seguridad contempla el diseño?",
+      "a": "El diseño considera autenticación por roles, control de acceso según el turno asignado y un registro de auditoría que solo admite inserciones, de modo que ninguna acción registrada pueda alterarse después."
+    },
+    "q3": {
+      "q": "¿Qué se necesita para usarlo?",
+      "a": "Un navegador web. Funciona en computadora, tablet y teléfono, para poder registrar junto a la cama del paciente."
+    },
+    "q4": {
+      "q": "¿En qué se diferencia de una historia clínica electrónica?",
+      "a": "En el alcance. La historia clínica guarda el registro institucional del paciente; ClinicalSync resuelve la continuidad del turno: el traspaso, el registro inmediato y la trazabilidad."
+    }
   },
   "team": {
     "eyebrow": "Equipo",

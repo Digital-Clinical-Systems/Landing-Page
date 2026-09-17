@@ -99,15 +99,23 @@
     transition: none;
   }
 
+  /* La barra de escritorio muestra solo 5 de los 9 enlaces (navegación
+     principal); Inicio, Beneficios, Preguntas frecuentes y Equipo quedan
+     como navegación secundaria, disponible en el menú móvil y en el pie de
+     página. No se quitan del DOM: siguen en el menú colapsado. */
+  .site-nav__item--secondary {
+    display: none;
+  }
+
   .site-nav__list {
     flex-direction: row;
     align-items: center;
-    gap: var(--space-2);
+    gap: var(--space-6);
   }
 
   .site-nav__link {
     padding: var(--space-2) 0;
-    font-size: var(--fs-sm);
+    font-size: var(--fs-base);
     border-bottom: none;
     white-space: nowrap;
   }
@@ -117,13 +125,10 @@
   }
 }
 
-/* El CTA del header solo entra a partir de aquí; entre 1024px y este punto
-   el CTA principal de la sección hero cumple ese rol sin apretar la barra. */
-@media (min-width: 1400px) {
-  .site-nav__list {
-    gap: var(--space-4);
-  }
-
+/* El CTA del header entra un poco después de que el nav se vuelve horizontal;
+   justo en 1024px queda demasiado apretado con los 5 enlaces + selector de
+   idioma. Antes de este punto el CTA de la sección hero cumple ese rol. */
+@media (min-width: 1100px) {
   .site-header__actions .btn-nav-cta {
     display: inline-flex;
   }

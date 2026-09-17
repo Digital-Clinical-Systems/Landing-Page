@@ -21,11 +21,36 @@ function initPricingToggle() {
   });
 }
 
+function initScrollReveal() {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion) return;
+
+  const sections = document.querySelectorAll("main > section");
+  if (!("IntersectionObserver" in window) || !sections.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        obs.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.15, rootMargin: "0px 0px -60px 0px" }
+  );
+
+  sections.forEach((section) => {
+    section.classList.add("reveal");
+    observer.observe(section);
+  });
+}
+
 async function bootstrap() {
   await initI18n();
   initNav();
   initPricingToggle();
   initContactForm();
+  initScrollReveal();
 }
 
 document.addEventListener("DOMContentLoaded", bootstrap);
