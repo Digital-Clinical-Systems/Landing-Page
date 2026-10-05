@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Contratar plan | ClinicalSync</title>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+  </head>
+  <body class="co-page">
+    <a class="skip-link" href="#co-contenido">Saltar al contenido principal</a>
+
+    <header class="co-topbar">
+      <div class="co-topbar__inner">
+        <a class="co-marca" href="index.html">
+          <span class="co-marca__sigla">CS</span>
+          <span>ClinicalSync</span>
+        </a>
+        <div class="co-topbar__derecha">
+          <span class="co-badge">Entorno de demostración</span>
+          <a class="co-volver" href="index.html#planes">Volver a planes</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="co-contenido" class="co-main">
+      <section class="co-hero">
+        <div class="co-hero__inner">
+          <div>
+            <p class="co-kicker">Contratación</p>
+            <h1 class="co-titulo">Configura tu plan de ClinicalSync</h1>
+            <p class="co-sub">
+              Elige la cobertura para tu servicio, revisa el detalle y completa los datos
+              para activar el acceso de tu equipo clínico.
+            </p>
+          </div>
+          <div class="co-resumen-mini">
+            <span>Plan seleccionado</span>
+            <strong data-mini-plan>Clínica</strong>
+            <span data-mini-periodo>Facturación mensual</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="co-flujo">
+        <nav class="co-pasos" aria-label="Progreso de la contratación">
+          <button type="button" class="co-paso is-activo" data-paso-btn="1"><span>1</span>Plan</button>
+          <button type="button" class="co-paso" data-paso-btn="2"><span>2</span>Resumen</button>
+          <button type="button" class="co-paso" data-paso-btn="3"><span>3</span>Institución</button>
+          <button type="button" class="co-paso" data-paso-btn="4"><span>4</span>Pago</button>
+          <button type="button" class="co-paso" data-paso-btn="5"><span>5</span>Confirmación</button>
+        </nav>
+
+        <div class="co-contenido">
+          <!-- Paso 1 -->
+          <section class="co-panel is-activo" data-panel="1">
+            <header class="co-panel__head">
+              <div>
+                <p class="co-panel__eyebrow">Paso 1</p>
+                <h2 class="co-panel__titulo" tabindex="-1">Selecciona la cobertura</h2>
+              </div>
+              <div class="co-switch" role="group" aria-label="Periodicidad de facturación">
+                <button type="button" data-periodo="mensual" aria-pressed="true">Mensual</button>
+                <button type="button" data-periodo="anual" aria-pressed="false">Anual <span class="co-switch__badge">-20%</span></button>
+              </div>
+            </header>
+            <div class="co-planes" data-planes role="radiogroup" aria-label="Planes disponibles"></div>
+            <footer class="co-acciones">
+              <a class="btn btn-secondary" href="index.html#planes">Volver</a>
+              <button type="button" class="btn btn-primary" data-ir="2">Continuar</button>
+            </footer>
+          </section>
+
+          <!-- Paso 2 -->
+          <section class="co-panel" data-panel="2" hidden>
+            <header class="co-panel__head">
+              <div>
+                <p class="co-panel__eyebrow">Paso 2</p>
+                <h2 class="co-panel__titulo" tabindex="-1">Resumen del pedido</h2>
+              </div>
+            </header>
+            <div class="co-carrito">
+              <article class="co-carrito__detalle">
+                <h3 data-det-nombre>Plan</h3>
+                <p data-det-desc>&mdash;</p>
+                <ul data-det-beneficios></ul>
+              </article>
+              <aside class="co-carrito__ticket">
+                <h3>Tu pedido</h3>
+                <div class="co-linea"><span>Plan</span><strong data-tk-plan>&mdash;</strong></div>
+                <div class="co-linea"><span>Periodicidad</span><strong data-tk-periodo>&mdash;</strong></div>
+                <div class="co-linea"><span>Precio por mes</span><strong data-tk-precio>&mdash;</strong></div>
+                <div class="co-linea"><span>IGV (18%)</span><strong data-tk-igv>&mdash;</strong></div>
+                <div class="co-linea co-linea--total"><span>Total mensual</span><strong data-tk-total>&mdash;</strong></div>
+              </aside>
+            </div>
+            <footer class="co-acciones">
+              <button type="button" class="btn btn-secondary" data-ir="1">Anterior</button>
+              <button type="button" class="btn btn-primary" data-ir="3">Continuar</button>
+            </footer>
+          </section>
+
+          <!-- Paso 3 -->
+          <section class="co-panel" data-panel="3" hidden>
+            <header class="co-panel__head">
+              <div>
+                <p class="co-panel__eyebrow">Paso 3</p>
+                <h2 class="co-panel__titulo" tabindex="-1">Datos de la institución</h2>
+              </div>
+            </header>
+            <form class="co-form" id="co-form-cliente" novalidate>
+              <div class="co-campo">
+                <label for="co-institucion">Institución de salud</label>
+                <input id="co-institucion" name="institucion" type="text" placeholder="Clínica o red hospitalaria" required />
+                <small class="co-error" data-error="institucion"></small>
+              </div>
+              <div class="co-campo">
+                <label for="co-ruc">RUC</label>
+                <input id="co-ruc" name="ruc" type="text" inputmode="numeric" maxlength="11" placeholder="20123456789" required />
+                <small class="co-error" data-error="ruc"></small>
+              </div>
+              <div class="co-campo">
+                <label for="co-contacto">Responsable del servicio</label>
+                <input id="co-contacto" name="contacto" type="text" placeholder="Nombre y apellido" required />
+                <small class="co-error" data-error="contacto"></small>
+              </div>
+              <div class="co-campo">
+                <label for="co-correo">Correo institucional</label>
+                <input id="co-correo" name="correo" type="email" placeholder="responsable@institucion.pe" required />
+                <small class="co-error" data-error="correo"></small>
+              </div>
+              <div class="co-campo">
+                <label for="co-telefono">Teléfono de contacto</label>
+                <input id="co-telefono" name="telefono" type="tel" inputmode="numeric" maxlength="9" placeholder="987654321" required />
+                <small class="co-error" data-error="telefono"></small>
+              </div>
+              <div class="co-campo">
+                <label for="co-unidad">Unidad donde se implementará</label>
+                <input id="co-unidad" name="unidad" type="text" placeholder="UCI Cardiovascular" required />
+                <small class="co-error" data-error="unidad"></small>
+              </div>
+            </form>
+            <footer class="co-acciones">
+              <button type="button" class="btn btn-secondary" data-ir="2">Anterior</button>
+              <button type="button" class="btn btn-primary" data-validar-cliente>Continuar al pago</button>
+            </footer>
+          </section>
+
+          <!-- Paso 4 -->
+          <section class="co-panel" data-panel="4" hidden>
+            <header class="co-panel__head">
+              <div>
+                <p class="co-panel__eyebrow">Paso 4</p>
+                <h2 class="co-panel__titulo" tabindex="-1">Medio de pago</h2>
+              </div>
+            </header>
+
+            <div class="co-pago">
+              <div>
+                <label class="co-label" for="co-tarjeta">Tarjeta</label>
+                <select id="co-tarjeta" class="co-select">
+                  <option value="ok-visa" data-num="4242 4242 4242 4242" data-marca="VISA">Visa &middot; termina en 4242</option>
+                  <option value="ok-mc" data-num="5555 5555 5555 4444" data-marca="MASTERCARD">Mastercard &middot; termina en 4444</option>
+                  <option value="sin-fondos" data-num="4000 0000 0000 0002" data-marca="VISA">Visa &middot; termina en 0002</option>
+                </select>
+
+                <label class="co-label" for="co-cuotas">Cuotas</label>
+                <select id="co-cuotas" class="co-select">
+                  <option value="1">Sin cuotas</option>
+                  <option value="3">3 cuotas</option>
+                  <option value="6">6 cuotas</option>
+                </select>
+
+                <p class="co-nota">
+                  Los medios de pago corresponden a tarjetas de prueba del estándar de la
+                  industria. No se solicitan ni se almacenan datos reales de tarjeta.
+                </p>
+              </div>
+
+              <div class="co-tarjeta" aria-live="polite">
+                <span class="co-tarjeta__marca" data-tj-marca>VISA</span>
+                <span class="co-tarjeta__num" data-tj-num>4242 4242 4242 4242</span>
+                <span class="co-tarjeta__pie">
+                  <span data-tj-titular>INSTITUCIÓN</span>
+                  <span>12/30</span>
+                </span>
+              </div>
+            </div>
+
+            <p class="co-alerta" role="alert" tabindex="-1" data-pago-error hidden></p>
+
+            <footer class="co-acciones">
+              <button type="button" class="btn btn-secondary" data-ir="3">Anterior</button>
+              <button type="button" class="btn btn-primary" data-pagar>
+                Pagar <span data-btn-total></span>
+              </button>
+            </footer>
+          </section>
+
+          <!-- Paso 5 -->
+          <section class="co-panel" data-panel="5" hidden>
+            <article class="co-confirmacion">
+              <div class="co-check" aria-hidden="true">&#10003;</div>
+              <h2 class="co-panel__titulo" tabindex="-1">Pago aprobado</h2>
+              <p class="co-confirmacion__plan" data-cf-plan>Plan</p>
+              <p class="co-confirmacion__monto" data-cf-monto>&mdash;</p>
+              <div class="co-confirmacion__datos">
+                <div class="co-linea"><span>Número de orden</span><strong data-cf-orden>&mdash;</strong></div>
+                <div class="co-linea"><span>Institución</span><strong data-cf-institucion>&mdash;</strong></div>
+                <div class="co-linea"><span>Cuotas</span><strong data-cf-cuotas>&mdash;</strong></div>
+              </div>
+              <p class="co-confirmacion__texto">
+                Enviamos a <strong data-cf-correo>tu correo</strong> el comprobante y las
+                credenciales para que el responsable del servicio registre a su equipo.
+              </p>
+              <p class="co-nota">
+                Operación de demostración: no se generó ningún cargo.
+              </p>
+              <div class="co-acciones co-acciones--centro">
+                <a class="btn btn-secondary" href="index.html">Volver a la landing</a>
+                <a class="btn btn-primary" href="https://clinicalsync-frontend.vercel.app" target="_blank" rel="noopener">
+                  Ingresar a la plataforma
+                </a>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script type="module">
+      // base.css oculta el body hasta que i18n marca el idioma aplicado.
+      import { initI18n } from "./js/i18n.js";
+      initI18n();
+    </script>
+    <script src="js/checkout.js"></script>
+  </body>
+</html>
