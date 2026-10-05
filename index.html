@@ -517,9 +517,9 @@
                 <li data-i18n="pricing.plan1.f2">Traspaso SBAR y registro clínico</li>
                 <li data-i18n="pricing.plan1.f3">Bitácora de trazabilidad</li>
               </ul>
-              <a class="btn btn-secondary plan__cta" href="#contacto" data-i18n="pricing.plan1.cta">
+              <button type="button" class="btn btn-secondary plan__cta" data-plan="servicio" data-i18n="pricing.plan1.cta">
                 Elegir plan
-              </a>
+              </button>
             </article>
 
             <article class="card plan plan--recommended">
@@ -553,9 +553,9 @@
                 <li data-i18n="pricing.plan2.f2">Resumen clínico y alertas</li>
                 <li data-i18n="pricing.plan2.f3">Reportes de auditoría</li>
               </ul>
-              <a class="btn btn-primary plan__cta" href="#contacto" data-i18n="pricing.plan2.cta">
-                Solicitar demostración
-              </a>
+              <button type="button" class="btn btn-primary plan__cta" data-plan="clinica" data-i18n="pricing.plan2.cta">
+                Elegir plan
+              </button>
             </article>
 
             <article class="card plan">
@@ -938,6 +938,86 @@
       </div>
     </footer>
 
+
+    <!-- Simulacion de pasarela de pago. No procesa pagos reales ni envia datos
+         a ningun servidor. Los campos de tarjeta son de solo lectura y usan
+         valores de prueba. -->
+    <dialog id="checkout" class="checkout" aria-labelledby="checkout-titulo">
+      <div class="checkout__panel">
+        <p class="checkout__aviso" role="note">
+          <strong>Simulación</strong> &middot; Entorno de demostración académica. No se
+          procesa ningún pago real ni se solicitan datos reales.
+        </p>
+
+        <section data-paso="1">
+          <h3 id="checkout-titulo" class="checkout__titulo" tabindex="-1">Resumen de tu plan</h3>
+          <dl class="checkout__resumen">
+            <div><dt>Plan</dt><dd data-resumen-plan>&mdash;</dd></div>
+            <div><dt>Periodicidad</dt><dd data-resumen-periodo>&mdash;</dd></div>
+            <div><dt>Importe</dt><dd data-resumen-precio>&mdash;</dd></div>
+          </dl>
+          <p class="checkout__nota">
+            La contratación real se coordina con el equipo comercial. Este recorrido
+            muestra cómo sería el proceso en el producto final.
+          </p>
+          <div class="checkout__acciones">
+            <button type="button" class="btn btn-secondary" data-cerrar>Cancelar</button>
+            <button type="button" class="btn btn-primary" data-ir="2">Continuar</button>
+          </div>
+        </section>
+
+        <section data-paso="2" hidden>
+          <h3 class="checkout__titulo" tabindex="-1">Datos de pago</h3>
+          <p class="checkout__nota">
+            Los campos vienen con una <strong>tarjeta de prueba</strong> y no son
+            editables, para que nadie ingrese datos reales en una demostración.
+          </p>
+          <div class="checkout__campos">
+            <label for="sim-card">Número de tarjeta (prueba)</label>
+            <input id="sim-card" type="text" value="4242 4242 4242 4242" readonly aria-readonly="true" />
+            <div class="checkout__fila">
+              <div>
+                <label for="sim-exp">Vencimiento</label>
+                <input id="sim-exp" type="text" value="12/30" readonly aria-readonly="true" />
+              </div>
+              <div>
+                <label for="sim-cvc">CVC</label>
+                <input id="sim-cvc" type="text" value="123" readonly aria-readonly="true" />
+              </div>
+            </div>
+            <label for="sim-nombre">Titular</label>
+            <input id="sim-nombre" type="text" value="TITULAR DE PRUEBA" readonly aria-readonly="true" />
+          </div>
+          <div class="checkout__acciones">
+            <button type="button" class="btn btn-secondary" data-ir="1">Volver</button>
+            <button type="button" class="btn btn-primary" data-ir="3">Confirmar suscripción</button>
+          </div>
+        </section>
+
+        <section data-paso="3" hidden>
+          <h3 class="checkout__titulo" tabindex="-1">Suscripción simulada</h3>
+          <p class="checkout__ok" role="status">
+            La simulación se completó correctamente. <strong>No se realizó ningún cargo.</strong>
+          </p>
+          <dl class="checkout__resumen">
+            <div><dt>Número de orden</dt><dd data-orden>&mdash;</dd></div>
+            <div><dt>Estado</dt><dd>Simulada</dd></div>
+          </dl>
+          <p class="checkout__nota">
+            En el producto final, aquí se entregarían las credenciales de acceso.
+            Puedes revisar la aplicación con datos de demostración.
+          </p>
+          <div class="checkout__acciones">
+            <button type="button" class="btn btn-secondary" data-cerrar>Cerrar</button>
+            <a class="btn btn-primary" data-app href="#" target="_blank" rel="noopener">
+              Ingresar a la plataforma
+            </a>
+          </div>
+        </section>
+      </div>
+    </dialog>
+
+    <script type="module" src="js/checkout.js"></script>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
