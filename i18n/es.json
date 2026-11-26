@@ -24,7 +24,9 @@
     "contact": "Contacto",
     "cta": "Solicitar demostración",
     "menu": "Abrir menú",
-    "language": "Cambiar idioma"
+    "language": "Cambiar idioma",
+    "app": "Ingresar a la plataforma",
+    "appShort": "Ingresar"
   },
   "hero": {
     "eyebrow": "Continuidad clínica cardiovascular",
@@ -233,6 +235,7 @@
     "repo": "Repositorio en GitHub",
     "report": "Informe del proyecto",
     "academic": "Trabajo académico del curso 1ASI0729 Desarrollo de Aplicaciones Open Source, Universidad Peruana de Ciencias Aplicadas.",
-    "rights": "Digital Clinical System · 2026"
+    "rights": "Digital Clinical System · 2026",
+    "app": "Aplicación ClinicalSync"
   }
 }

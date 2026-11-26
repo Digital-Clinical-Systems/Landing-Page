@@ -79,7 +79,10 @@
 
 /* Selector calificado para ganar especificidad sobre `.btn` de components.css
    sin depender del orden de carga de las hojas de estilo. */
-.site-header__actions .btn-nav-cta {
+/* Ambos botones de la cabecera se reservan para pantallas anchas: en movil el
+   acceso vive dentro del menu desplegable, para no comprimir la barra. */
+.site-header__actions .btn-nav-cta,
+.site-header__actions .btn-nav-app {
   display: none;
 }
 
@@ -128,6 +131,15 @@
 /* El CTA del header entra un poco después de que el nav se vuelve horizontal;
    justo en 1024px queda demasiado apretado con los 5 enlaces + selector de
    idioma. Antes de este punto el CTA de la sección hero cumple ese rol. */
+/* El acceso a la plataforma se suma a la barra solo cuando hay sitio para los
+   dos botones: por debajo de 1200 px el contenido desbordaria, y el acceso
+   queda disponible en el menu desplegable y en el pie de pagina. */
+@media (min-width: 1200px) {
+  .site-header__actions .btn-nav-app {
+    display: inline-flex;
+  }
+}
+
 @media (min-width: 1100px) {
   .site-header__actions .btn-nav-cta {
     display: inline-flex;

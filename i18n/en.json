@@ -24,7 +24,9 @@
     "contact": "Contact",
     "cta": "Request a demo",
     "menu": "Open menu",
-    "language": "Change language"
+    "language": "Change language",
+    "app": "Sign in to the platform",
+    "appShort": "Sign in"
   },
   "hero": {
     "eyebrow": "Cardiovascular care continuity",
@@ -233,6 +235,7 @@
     "repo": "GitHub repository",
     "report": "Project report",
     "academic": "Academic project for the course 1ASI0729 Open Source Application Development, Universidad Peruana de Ciencias Aplicadas.",
-    "rights": "Digital Clinical System · 2026"
+    "rights": "Digital Clinical System · 2026",
+    "app": "ClinicalSync application"
   }
 }
